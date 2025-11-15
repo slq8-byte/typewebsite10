@@ -1,24 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const containerIds = ['ab-container', 'sizes']; // match IDs exactly
+    const containerIds = ['ab-container', 'sizes'];
 
     function forceRepaint(element) {
         element.style.display = 'none';
-        element.offsetHeight; // Force reflow
+        element.offsetHeight;
         element.style.display = '';
     }
 
     containerIds.forEach(id => {
         const container = document.getElementById(id);
+
         if (container) {
             container.addEventListener('click', function() {
                 this.classList.toggle('active');
-                forceRepaint(this); // Safari workaround
+                forceRepaint(this); // For Safari
             });
             container.style.cursor = 'pointer';
         }
     });
 
-    // Dropdown logic remains unchanged
+    // Dropdown logic (if needed)
     const dropdownButton = document.getElementById('dropbtn');
     const dropdownContent = document.querySelector('.dropdown-content');
 
