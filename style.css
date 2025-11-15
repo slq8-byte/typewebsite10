@@ -20,14 +20,12 @@
 
 }
 
-.ab-container,
-.sizes-container {
-  font-synthesis: none;
-}
-
-.ab-container.active,
-.sizes-container.active {
+#ab-container.active, #sizes.active {
   font-weight: bold;
+}
+#ab-container, #sizes {
+  font-weight: normal;
+  font-synthesis: none; /* Safari fix */
 }
 
   /* Menu */
