@@ -20,33 +20,15 @@
 
 }
 
-
-#ab-container.regular * {
-    font-family: 'EngraversOldEnglishRegular'; 
-        font-weight: normal;
-
+.ab-container,
+.sizes-container {
+  font-synthesis: none;
 }
 
-#ab-container.bold * {
-    font-family: 'Engravers Old English Bold'; 
-      font-weight: bold;
-
+.ab-container.active,
+.sizes-container.active {
+  font-weight: bold;
 }
-
-#sizes.regular * {
-    font-family: 'EngraversOldEnglishRegular'; 
-    font-weight: normal;
-
-}
-
-#sizes.bold * {
-    font-family: 'Engravers Old English Bold';
-    font-weight: bold;
- 
-}
-
-
-
 
   /* Menu */
 
